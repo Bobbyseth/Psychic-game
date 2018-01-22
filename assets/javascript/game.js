@@ -26,7 +26,6 @@ document.getElementsByClassName("losses").innerHTML = losses;
 document.getElementsByClassName("attempts").innerHTML = attempts;
 document.getElementsByClassName("guesses").innerHTML = guesses;
 
-
       if (UC !== CC)
           for (i = 0; i < 10; i++) {
             UC = prompt ("Sorry, try again"); // If incorrect guess, says so and asks for another.
@@ -37,6 +36,7 @@ document.getElementsByClassName("guesses").innerHTML = guesses;
               attempts = 0; //reset attempts to 10
               guesses = []; // reset guesses array to empty
               alert("You da winna!!!"); //alert you da winna
+              break;
               }
               else if (attempts === 10) { //what happens if you get down to 0
               losses++; // add one to the losses
